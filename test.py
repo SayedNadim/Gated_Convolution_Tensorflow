@@ -40,7 +40,7 @@ def npmask(h, w):
     return mask.reshape(mask.shape + (1,)).astype(np.float32)
 
 if __name__ == "__main__":
-    config = ng.Config('config/inpaint.yml')
+    config = ng.Config('inpaint.yml')
     if config.GPU_ID != -1:
         ng.set_gpus(config.GPU_ID)
     else:
