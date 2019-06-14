@@ -1,5 +1,7 @@
 # GatedConvolution-TF
-An initial TensorFlow implementation of Free-Form Image Inpainting with Gated Convolution (https://arxiv.org/abs/1806.03589).
+An unofficial TensorFlow implementation of Free-Form Image Inpainting with Gated Convolution (https://arxiv.org/abs/1806.03589).
+
+#### This is still an ongoing implementation. Please feel free to suggest bugs or improvements. 
 
 ### Dependencies
 1. Python 3
