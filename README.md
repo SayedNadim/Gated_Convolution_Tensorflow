@@ -18,6 +18,7 @@ An initial TensorFlow implementation of Free-Form Image Inpainting with Gated Co
 
 ### To do list
 - [x] Modify inpaint_ops.py. - Added modified discriminator convolution layer and mask generation function as per suggestions from https://github.com/JiahuiYu/generative_inpainting/issues/62. 
+- [ ] Slim model by 25% -  Still training with original width of the model. You can slim the model by 25% by setting cnum = 32 * 0.75.
 - [ ] Provide pretrained model - Will provide after finishing training.
 - [ ] Provide loss graph - Will update soon.
 - [ ] Provide test results - Still training.
