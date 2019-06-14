@@ -9,7 +9,7 @@ An initial TensorFlow implementation of Free-Form Image Inpainting with Gated Co
 ### How to train
 1. Download Places2 dataset (http://places2.csail.mit.edu/download.html). High resolution images are suggested.
 2. Create flist. Modify 'flist_maker' file and run 'python flist_maker'.
-3. Modify 'inpaint.yml' file under 'config folder. Set 'RANDOMCROP' to 'True' if you have downloaded high resolution images. If set to 'True', the model will randomly crop 256x256 portion from the images. If set to 'False', the model will resize the images to 256x256 or use 256x256 images.
+3. Modify 'inpaint.yml' file. Set 'RANDOMCROP' to 'True' if you have downloaded high resolution images. If set to 'True', the model will randomly crop 256x256 portion from the images. If set to 'False', the model will resize the images to 256x256 or use 256x256 images.
 4. In case of resuming training, modify 'LOG_DIR' and start training from a checkpoint, e.g. 'LOG_DIR: 20190614190532339796_nadim-PMBSB09A-Samsung-DeskTop_places2_MASKED_sn_pgan_full_model_places2_256'
 
 ### How to test
