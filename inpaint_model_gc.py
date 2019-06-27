@@ -160,7 +160,7 @@ class InpaintGCModel(Model):
         # Local patch is removed in the gated convolution. It's now AE + GAN loss
         # (https://github.com/JiahuiYu/generative_inpainting/issues/62)
         losses['ae_loss'] = config.COARSE_L1_ALPHA * tf.reduce_mean(tf.abs(batch_pos - x1) * (1. - batch_mask))
-        losses['ae_loss'] = config.COARSE_L1_ALPHA * tf.reduce_mean(tf.abs(batch_pos - x2) * (1. - batch_mask))
+        losses['ae_loss'] += config.COARSE_L1_ALPHA * tf.reduce_mean(tf.abs(batch_pos - x2) * (1. - batch_mask))
         losses['ae_loss'] /= tf.reduce_mean(1. - batch_mask)
 
         if summary:
